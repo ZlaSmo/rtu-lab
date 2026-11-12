@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Zyntar · prijava</title>
+<style data-login>
+  :root { --brand: #28709E; --text: #141414; --muted: #5A5A5A; --bg: #F4F7FA; }
+  body.login { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); font-family: Calibri, "Segoe UI", system-ui, sans-serif; color: var(--text); }
+  form { background: #fff; width: min(360px, calc(100vw - 32px)); padding: 32px; border-radius: 12px; box-shadow: 0 6px 24px rgba(20, 20, 20, .08); box-sizing: border-box; }
+  .brand { font-weight: 700; letter-spacing: .12em; font-size: 14px; color: var(--brand); }
+  h1 { font-size: 22px; margin: 8px 0 20px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  input { display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 10px 12px; font-size: 15px; border: 1px solid #CBD5DF; border-radius: 8px; }
+  input:focus { outline: 2px solid var(--brand); border-color: transparent; }
+  button { width: 100%; margin-top: 8px; padding: 11px; font-size: 15px; font-weight: 700; color: #fff; background: var(--brand); border: 0; border-radius: 8px; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+  #msg { min-height: 1.2em; font-size: 13px; color: #A33; margin: 12px 0 0; }
+</style>
+</head>
+<body class="login">
+<form id="login" hidden autocomplete="on">
+  <div class="brand">ZYNTAR</div>
+  <h1>Zaštićeni pristup</h1>
+  <label>Korisničko ime<input id="user" name="username" autocomplete="username" required></label>
+  <label>Lozinka<input id="pass" name="password" type="password" autocomplete="current-password" required></label>
+  <button id="go" type="submit">Prijava</button>
+  <p id="msg" role="status"></p>
+</form>
+<script src="loader.js"></script>
+</body>
+</html>
